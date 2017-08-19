@@ -6,7 +6,6 @@ namespace MazeSolver
 {
     class Program
     {
-        [STAThread]
         static void Main(string[] args)
         {
             string path = string.Empty;
