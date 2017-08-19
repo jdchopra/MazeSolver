@@ -1,8 +1,8 @@
 Using the Maze Solver
 =====================
 
-Run the application with args[0] = the file path of the maze to be solved.
-Alternatively if no arguments are supplied the user will be prompted for a file path at runtime.
+Run the application with args[0] = the file path of the maze to be solved.\n
+Alternatively if no arguments are supplied the user will be prompted for a file path at runtime.\n
 
 Maze file format
 ================
