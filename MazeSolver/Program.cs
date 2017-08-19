@@ -4,17 +4,6 @@ using System.Diagnostics;
 
 namespace MazeSolver
 {
-    public struct Point
-    {
-        public int X, Y;
-
-        public Point(int xPoint, int yPoint)
-        {
-            X = xPoint;
-            Y = yPoint;
-        }
-    }
-
     class Program
     {
         static void Main(string[] args)
