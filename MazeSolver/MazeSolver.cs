@@ -21,7 +21,7 @@ namespace MazeSolver
             bool foundSolution = false;
 
             // Add starting node to open list
-            startNode.F = CalculateF(startNode, startNode, endNode); // startNode is passed twice as at the start it is also the current node
+            startNode.F = CalculateF(startNode, startNode, endNode); // startNode is passed twice at the start as it is also the current node
             openList.Add(startNode);
 
             while (openList.Count > 0) // If the openList reaches 0, the maze is unsolvable

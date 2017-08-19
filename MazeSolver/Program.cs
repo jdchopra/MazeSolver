@@ -9,6 +9,7 @@ namespace MazeSolver
         static void Main(string[] args)
         {
             string path = string.Empty;
+            // Get path to file from either args or user input if no args are supplied
             if (args.Length == 0)
             {
                 Console.WriteLine("Please enter the path of the maze file to solve.");
@@ -18,16 +19,21 @@ namespace MazeSolver
             {
                 path = args[0];
             }
+            // Time the solution
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
+
             Maze maze = MazeReader.MazeFromFile(path);
             List<Point> solutionPath = MazeSolver.SolveMaze(maze);
+
             if (solutionPath != null)
                 Output.Print(maze.Description, solutionPath);
             else
                 Console.WriteLine("No solution was found.");
+
             stopWatch.Stop();
             Console.WriteLine("Runtime was: " + stopWatch.ElapsedMilliseconds + "ms");
+
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }    

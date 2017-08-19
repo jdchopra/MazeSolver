@@ -7,7 +7,6 @@
         public double F { get; set; }
         public int G { get; set; }
         public double H { get; set; }
-        public bool Traversable { get; set; }
         public Node Parent { get; set; }
     }
 }
