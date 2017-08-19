@@ -36,7 +36,7 @@ namespace MazeSolver
                 closedList.Add(currentNode);
                 openList.Remove(currentNode);
 
-                // Search 4 adjacent squares and do stuff to them
+                // Search the four adjacent squares and assess them
                 List<Node> traversableAdjacentNodes = GetTraversableAdjacentNodes(currentNode, maze);
                 foreach (Node node in traversableAdjacentNodes)
                 {
