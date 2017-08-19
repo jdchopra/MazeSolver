@@ -6,9 +6,19 @@ namespace MazeSolver
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
-            string path = @"C:\Users\Jon\Desktop\Junifer - maze_for_candidates 2017\large_input.txt";
+            string path = string.Empty;
+            if (args.Length == 0)
+            {
+                Console.WriteLine("Please enter the path of the maze file to solve.");
+                path = Console.ReadLine();
+            }
+            else
+            {
+                path = args[0];
+            }
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
             Maze maze = MazeReader.MazeFromFile(path);
