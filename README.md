@@ -9,7 +9,7 @@ Maze file format
 ================
 
 The input is a maze description file in plain text.  
-    1 - denotes walls
+    1 - denotes walls  
     0 - traversable passage way
 
 INPUT:
